@@ -32,9 +32,5 @@ Vector3 startPos;
 	if (Input.GetKeyDown(KeyCode.W)) {
 	 transform.position += Vector3.forward;
 	}
-
-	if(transform.position == newVector3(0f, 1f, 1f)){
-	}
-	Debug.Log("Game Over");
     }
 }
