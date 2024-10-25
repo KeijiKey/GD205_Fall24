@@ -16,5 +16,17 @@ public class moveDantedamnit : MonoBehaviour
         if (Input.GetKey(KeyCode.W)){
 	GetComponent<Animator>().SetFloat("forward", 2f);
 	}
+else {
+	GetComponent<Animator>().SetFloat("forward", 0f);
+}
+
+ if (Input.GetKey(KeyCode.S)){
+	GetComponent<Animator>().SetFloat("forward", 2f);
+	}
+else {
+	GetComponent<Animator>().SetFloat("forward", 0f);
+}
+
+
     }
 }
