@@ -13,6 +13,13 @@ public class MovingApplesYeah : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+if (Input.GetKey(KeyCode.A)){
+		GetComponent<Animator>().SetFloat("left", 1f);
+}
+	GetComponent<Animator>().SetFloat("forward", 0f);
+	GetComponent<Animator>().SetFloat("left", 0f);
+
         if (Input.GetKey(KeyCode.W)){
 	GetComponent<Animator>().SetFloat("forward", 2f);
 		if (Input.GetKey(KeyCode.LeftShift)){
@@ -21,13 +28,8 @@ public class MovingApplesYeah : MonoBehaviour
 		
 	}
 
-else {
-	if (Input.GetKey(KeyCode.A)){
-		GetComponent<Animator>().SetFloat("left", 1f);
-}
-	GetComponent<Animator>().SetFloat("forward", 0f);
-	GetComponent<Animator>().SetFloat("left", 0f);
+	
 }
 
-    }
+    
 }
