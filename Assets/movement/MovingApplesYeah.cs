@@ -16,12 +16,17 @@ public class MovingApplesYeah : MonoBehaviour
         if (Input.GetKey(KeyCode.W)){
 	GetComponent<Animator>().SetFloat("forward", 2f);
 		if (Input.GetKey(KeyCode.LeftShift)){
-	GetComponent<Animator>().SetFloat("forward", 4f);
+		GetComponent<Animator>().SetFloat("forward", 4f);
 }
-
+		
 	}
+
 else {
+	if (Input.GetKey(KeyCode.A)){
+		GetComponent<Animator>().SetFloat("left", 1f);
+}
 	GetComponent<Animator>().SetFloat("forward", 0f);
+	GetComponent<Animator>().SetFloat("left", 0f);
 }
 
     }
