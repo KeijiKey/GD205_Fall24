@@ -13,7 +13,11 @@ public class MovingApplesYeah : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+GetComponent<Animator>().SetBool("jump", false);
 
+if (Input.GetKeyDown(KeyCode.Space)){
+		GetComponent<Animator>().SetBool("jump", true);
+}
 if (Input.GetKey(KeyCode.A)){
 		GetComponent<Animator>().SetFloat("left", 1f);
 }
